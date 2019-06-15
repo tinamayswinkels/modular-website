@@ -153,7 +153,7 @@
 
   .featured-stat {
     font-size: 3rem;
-    color: orange;
+    color: #e67e22; /* orange */
     margin-bottom: 1rem;
     display: block;
   }
@@ -164,7 +164,7 @@
     text-decoration: none;
     color: #e67e22;
     border: 2px solid;
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
     margin-top: 1rem;
     display: inline-block;
     text-transform: uppercase;
@@ -348,7 +348,6 @@
     display: block;
     width: 100%;
     font-size: 1rem;
-    margin: 1em auto;
     vertical-align: top;
   }
 
@@ -383,6 +382,9 @@
     border-radius: 0;
     font-size: 1rem;
   }
+   form .button {
+     width:100%;
+   }
 
   /* Testimomnials */
 
@@ -492,7 +494,7 @@
   padding: 0.25rem;
   margin: 0.25rem 0;
   display:block;
-  color: teal;
+  color: #e67e22;
   position: relative;
   text-decoration: none;
 }

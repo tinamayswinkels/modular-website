@@ -629,25 +629,77 @@ layout: default
   <div class="col-8_sm-12-middle padded">
     <h2> This is a responsive vertical video </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
   </div>
 </section>
 
 <h2> FAQs </h2>
 
 <section class="padded">
-    <h2> FAQs </h2>
 
-    <!-- dl stands for description list, with a description title and a description description -->
-    <dl class="accordion">
+  <h2 class="centered padded-1"> FAQs </h2>
 
-      <dt><a href="">Panel 1</a></dt>
-      <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+  <!-- dl stands for description list, with a description title and a description description -->
+  <dl class="accordion light-bg padded-1">
 
-      <dt><a href="">Panel 2</a></dt>
-      <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+    <dt><a href="">Panel 1</a></dt>
+    <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
 
-      <dt><a href="">Panel 3</a></dt>
-      <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+    <dt><a href="">Panel 2</a></dt>
+    <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
 
-    </dl>
+    <dt><a href="">Panel 3</a></dt>
+    <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+      eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+
+  </dl>
+</section>
+
+<h2> Map - Full Size </h2>
+
+<section>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.420342995598!2d115.12927631440583!3d-8.651511390396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23879eae0a51f%3A0x6b09725f69f19992!2sThe+Shady+Shack!5e0!3m2!1sen!2sid!4v1560581894985!5m2!1sen!2sid"
+      width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<h2> Map - Half Size </h2>
+
+<section class="grid padded">
+  <div class="col-6_sm-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.420342995598!2d115.12927631440583!3d-8.651511390396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23879eae0a51f%3A0x6b09725f69f19992!2sThe+Shady+Shack!5e0!3m2!1sen!2sid!4v1560581894985!5m2!1sen!2sid"
+        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="col-6_sm-12-middle padded">
+    <h2> Where to find us </h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p> <strong> Email: </strong> hello@company.com </p>
+    <p> <strong> Phone: </strong> 0412 555 555 </p>
+    <p> <strong> Facebook: </strong> fb.com/companyname </p>
+  </div>
+</section>
+
+<h2> Get in touch </h2>
+
+<section class="grid padded">
+  <div class="col-6_sm-12 padded">
+    <h2> Get In Touch </h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p> <strong> Email: </strong> hello@company.com </p>
+    <p> <strong> Phone: </strong> 0412 555 555 </p>
+    <p> <strong> Facebook: </strong> fb.com/companyname </p>
+  </div>
+  <div class="col-6_sm-12-middle padded">
+    <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+      <div class="col-6_sm-12">
+        <input type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="col-6_sm-12">
+        <input type="email" name="_replyto" placeholder="Your Email">
+      </div>
+      <div class="col-12">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Send" class="button">
+      </div>
+    </form>
+  </div>
+</section>
