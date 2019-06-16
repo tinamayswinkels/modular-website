@@ -244,14 +244,16 @@
     padding: 2% 5%;
   }
 
-  header nav a {
+  nav a {
     text-decoration: none;
     color: inherit;
+  }
+
+  header nav a {
     display: inline-block;
     padding: 0.5rem;
   }
-
-  header nav a:hover {
+  nav a:hover {
     color: #e67e22;
   }
 
@@ -267,6 +269,26 @@
     background-color: #e67e22;
     color: white;
   }
+
+  footer .info {
+    padding-right: 3rem;
+  }
+
+  footer nav a {
+    display:block;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  @media(max-width:767px) {
+    footer .info {
+      padding-right: 1rem;
+    }
+
+  }
+
   /* BANNERS */
 
   .banner,
@@ -375,6 +397,7 @@
     width: 30%;
     display: inline-block;
     max-width: 250px;
+    margin-top:1rem;
   }
 
   .email-signup .button-solid {
@@ -443,6 +466,26 @@
   border: 2px solid white;
 }
 
+
+/* Masonry Gallery */
+
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.masonry .item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media(max-width:767px) {
+  .masonry {
+    column-count: 2;
+  }
+}
 
 /* pricing */
 
