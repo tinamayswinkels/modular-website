@@ -22,6 +22,10 @@
     margin: 1rem 0;
   }
 
+  [class*=grid] {
+    margin: 0;
+  }
+
   section,
   header,
   footer {
@@ -249,7 +253,8 @@
     color: inherit;
   }
 
-  header nav a {
+  header nav a,
+  .inline a {
     display: inline-block;
     padding: 0.5rem;
   }
@@ -409,6 +414,13 @@
      width:100%;
    }
 
+   @media(max-width:767px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
+
   /* Testimomnials */
 
   .card {
@@ -441,6 +453,7 @@
     text-decoration: none;
     box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
     transition: 0.2s all;
+    display: block;
   }
 
   .clickable-box .overlay {
@@ -484,6 +497,12 @@
 @media(max-width:767px) {
   .masonry {
     column-count: 2;
+  }
+}
+
+@media(max-width:567px) {
+  .masonry {
+    column-count: 1;
   }
 }
 
