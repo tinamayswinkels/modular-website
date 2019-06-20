@@ -1,3 +1,5 @@
+/*-----  CSS RESET  ------*/
+
   * {
     padding: 0;
     margin: 0;
@@ -5,13 +7,13 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 100%; /* this ensures images never break their container */
   }
 
   body {
-    background-color: rgb(90, 90, 95);
-    padding: 4%;
-    color: white;
+    background-color: rgb(90, 90, 95); /* This is just for the demo */
+    padding: 4%; /* This is just for the demo */
+    color: white; /* This is just for the demo */
     font-family: 'Noto Sans HK', sans-serif;
   }
 
@@ -20,10 +22,6 @@
   footer[class*=grid],
   section.banner-with-header {
     margin: 1rem 0;
-  }
-
-  [class*=grid] {
-    margin: 0;
   }
 
   section,
@@ -35,7 +33,7 @@
     color: rgb(90, 90, 90);
   }
 
-  body>h2 {
+  body>h2 { /* this is just for the demo */
     padding-top: 2rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -43,80 +41,42 @@
     letter-spacing: 1px;
   }
 
+   /* this overrides the gridlex columns having 2% padding */
+
+  [class*=grid] {
+    margin: 0;
+  }
+
   [class*=col] {
     padding: 0;
   }
 
-  .left {
-    text-align: left;
-  }
+  /* These are our utility classes  */
 
-  .right {
-    text-align: right;
-  }
+  .left     {  text-align: left;     }
+  .right    {  text-align: right;    }
+  .centered {  text-align: center;   }
 
-  .centered {
-    text-align: center;
-  }
+  .padded   {  padding: 5%;    }
+  .padded-1 {  padding: 1rem;  }
+  .padded-2 {  padding: 2rem;  }
 
-  .padded {
-    padding: 5%;
-  }
+  .tall-50  {  min-height: 50vh;   }
+  .tall-100 {  min-height: 100vh;  }
 
-  .padded-1 {
-    padding: 1rem;
-  }
+  .dark-bg      {  background-color: rgb(90, 90, 95);  }
+  .light-bg     {  background-color: rgb(240, 240, 245); }
+  .featured-bg  {  background-color: #ffeaa7;  }
 
-  .padded-2 {
-    padding: 2rem;
-  }
+  .light-text   { color: white; }
 
-  .tall-50 {
-    min-height: 50vh;
-  }
+  /* General typography */
 
-  .tall-100 {
-    min-height: 100vh;
-  }
-
-  .dark-bg {
-    background-color: rgb(90, 90, 95);
-  }
-
-  .light-bg {
-    background-color: rgb(240, 240, 245);
-  }
-
-  .featured-bg {
-    background-color: #ffeaa7;
-  }
-
-  .dark-bg .light-text {
-    color: white;
-  }
-
-  hr {
-    border: none;
-    border-bottom: 3px solid;
-    width: 4rem;
-    margin-bottom: 1rem;
-  }
-  /* typography */
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h2, h3, h4, h5, h6 {
     line-height: 1;
   }
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
+  h2, h3, h4, h5, h6, p {
     margin-bottom: 0.8rem;
   }
 
@@ -130,17 +90,9 @@
   }
 
 
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  h4 {
-    font-size: 1.4rem;
-  }
+  h2  { font-size: 2.2rem;  }
+  h3  { font-size: 1.8rem;  }
+  h4  { font-size: 1.4rem;  }
 
   .big-bold {
     font-size: 3rem;
@@ -212,6 +164,13 @@
     display: inline-block;
     padding: 0.5rem;
     margin: 2px;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 3px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
   }
 
   .quote-icon {
