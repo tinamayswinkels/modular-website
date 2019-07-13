@@ -21,7 +21,7 @@ $(document).ready(function() {
 });
 
 
-// this is the accordian code in plain javascript, not jquery
+// this is the accordian code 
 
 $(document).ready(function() {
 

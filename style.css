@@ -8,52 +8,21 @@
 
   img {
     max-width: 100%; /* this ensures images never break their container */
+    height: auto;
   }
 
   body {
-    background-color: rgb(90, 90, 95); /* This is just for the demo */
-    padding: 4%; /* This is just for the demo */
-    color: white; /* This is just for the demo */
     font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(60,60,65);
   }
 
-  /* This overrides the default padding in jekyll, and gives some space around each section for the demo */
-  section[class*=grid],
-  header[class*=grid],
-  footer[class*=grid],
-  section.banner-with-header,
-  section {
-    margin: 1rem 0;
-  }
+   /* this overrides the default padding and margin on gridlex elements */
+  [class*=grid] {   margin: 0;  }
+  [class*=col]  {   padding: 0; }
 
-  /* this is just for the demo */
-  section,
-  header,
-  footer {
-    position: relative;
-    background-color: white;
-    color: rgb(90, 90, 90);
-  }
 
-  body>h2 { /* this is just for the demo */
-    padding-top: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-  }
 
-   /* this overrides the gridlex columns having 2% padding */
-
-  [class*=grid] {
-    margin: 0;
-  }
-
-  [class*=col] {
-    padding: 0;
-  }
-
-  /* These are our utility classes  */
+  /* ------------- Utility Classes --------------  */
 
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
@@ -76,10 +45,16 @@
 
   h2, h3, h4, h5, h6 {
     line-height: 1;
+    margin-bottom: 0.8rem;
   }
 
-  h2, h3, h4, h5, h6, p {
-    margin-bottom: 0.8rem;
+  h2  { font-size: 2.2rem;  }
+  h3  { font-size: 1.8rem;  }
+  h4  { font-size: 1.4rem;  }
+  p   { font-size: 1.1rem;  }
+
+  p, ul {
+     margin-bottom: 0.8rem;
   }
 
   /* this makes sure that the last element in any container doesn't have margin-bottom */
@@ -92,85 +67,58 @@
     margin-bottom:0;
   }
 
+  hr { /* this is a line element */
+    border: none;
+    border-bottom: 3px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
 
-  h2  { font-size: 2.2rem;  }
-  h3  { font-size: 1.8rem;  }
-  h4  { font-size: 1.4rem;  }
-
-  /* ------- unique typography styles --------- */
 
 
-  .not-bold { font-weight: normal; } /* add this class to make headings not bold */
+  /* ------- unique typography styles - adjust to suit your styles  --------- */
+
+  .not-bold   { font-weight: normal; } /* add this class to make headings not bold */
+  .no-bullets { list-style:none; } /* Used to remove dot-points from a list */
 
   .big-bold {
     font-size: 3rem;
     font-weight: 700;
   }
 
-  /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
-  .emphasis {
+  .emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
     font-size: 1.2rem;
   }
 
   /* Icons */
-  .featured-stat {
-    font-size: 3rem;
-    color: #e67e22; /* orange */
-    margin-bottom: 1rem;
-    display: block;
-  }
 
-  .far {
-    /* font awesome icons */
+  .far {        /* default styles for font awesome icons */
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
+  .featured-stat {     /* styles for our featured statistic icons  */
+    font-size: 3rem;
+    color: #e67e22;
+    margin-bottom: 1rem;
+    display: block;
+  }
 
-    span.highlight {
-      background-color: rgb(240, 240, 245);
-      display: inline-block;
-      padding: 0.5rem;
-      margin: 2px;
-    }
+  .highlight { /* this is applied to spans for out highlighted text. */
+    background-color: rgb(240, 240, 245);
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 2px;
+  }
 
-    hr {
-      border: none;
-      border-bottom: 3px solid;
-      width: 4rem;
-      margin-bottom: 1rem;
-    }
+  .quote-icon {  /* You can also change the fonts for these icons specifically */
+    font-size: 6rem;
+    line-height: 1;
+  }
 
-    .quote-icon {
-      font-size: 6rem;
-      line-height: 1;
-    }
+  /* ---------------  Button Styles  --------- */
+  /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
 
-    .arrow {
-      font-size: 1.5rem;
-      display: inline-block;
-      text-align: center;
-      font-weight: 300;
-      line-height: 1.5rem;
-      min-width: 2.5rem;
-      border: 1px solid #e67e22;
-      padding: 0.5rem;
-      border-radius: 100%;
-      text-decoration: none;
-      color: #e67e22;
-      margin-top: 0.5rem;
-    }
-
-    .arrow:hover {
-      color: rgb(60, 60, 60);
-      border-color: rgb(60, 60, 60);
-    }
-
-    .no-bullets {
-      list-style:none;
-    }
-
-  /* -------  Button Styles  --------- */
   .button,
   .button-solid,
   .button-inverted {
@@ -189,7 +137,7 @@
     color: rgb(60, 60, 60);
   }
 
-  .button.inverted {
+  .button.inverted {   /* this is for a button on a dark background */
     border: 2px solid white;
     color: white;
   }
@@ -209,6 +157,28 @@
     background-color: rgb(60, 60, 60);
     border-color: rgb(60, 60, 60);
   }
+
+
+    .arrow { /* this is the arrow button */
+      font-size: 1.5rem;
+      display: inline-block;
+      text-align: center;
+      font-weight: 300;
+      line-height: 1.5rem;
+      min-width: 2.5rem;
+      border: 1px solid #e67e22;
+      padding: 0.5rem;
+      border-radius: 100%;
+      text-decoration: none;
+      color: #e67e22;
+      margin-top: 0.5rem;
+    }
+
+    .arrow:hover {
+      color: rgb(60, 60, 60);
+      border-color: rgb(60, 60, 60);
+    }
+
 
   /* headers and footers */
 
@@ -333,6 +303,72 @@
   .hover-inner p {
     margin-bottom: 0;
   }
+
+  /* Blog Post Elements */
+  /* Blog elements */
+  .blog-loop .blog-item {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    display:block;
+  }
+
+  .blog-loop .bg-image {
+    padding-bottom: 60%;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-loop img,
+  .post-body img {
+      margin-bottom: 2vh;
+  }
+  .post-body {
+    padding-right: 3%;
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+  }
+
+  .sidebar > div {
+    border: 1px solid rgb(245,245,245);
+    padding: 2rem;
+    margin: 2vh 0;
+  }
+
+  .previous, .next { /* This is to navigate to the previous and next page of pagination for blogs */
+      padding: 0 1.5em;
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+  }
+
+  .category {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(90,90,95);
+    border: 1px solid rgb(90,90,95);
+    margin: 2px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  a.category:hover {
+    border-color: #1abc9c; /* featured color */
+    color: #1abc9c; /* featured color */
+  }
+
+  .social-share nav [class*=fa] {
+    padding: 0 1em 0 0;
+  }
+
+  .social-share hr{
+    margin: 3rem 0;
+  }
+
   /* ----- FORMS --------------------------- */
 
   input,

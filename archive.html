@@ -1,0 +1,32 @@
+---
+layout: default
+title: blog
+---
+
+<section class="padded">
+  <h1 class="centered"> Latest on the blog </h1>
+
+  <div class="grid blog-loop">
+
+    {% for post in site.posts limit: 50 %}
+
+      <div class="col-4_sm-12 padded-1">
+          <a href="{{post.url}}" class="blog-item">
+            <div class="bg-image" style="background-image:url('{{post.image_path}}')"> </div>
+            <h3> {{post.title}} </h3>
+            <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
+            {% for category in post.categories %}
+              <span class="category"> {{category}} </span>
+            {% endfor %}
+            <p> {{post.excerpt | strip_html | truncate:100 }} </p>
+          </a>
+        </div>
+
+      {% endfor %}
+
+  </div>
+  <div class="centered">
+    <!-- This links to the archive of blog posts -->
+    <a href="/archive" class="button"> See More </a>
+  </div>
+</section>
