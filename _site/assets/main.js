@@ -1,6 +1,17 @@
-// This is the pop-up gallery
+
 
 $(document).ready(function() {
+
+	// This is the hamburger menu
+	$(".hamburger").click(function(){
+
+	  $(this).toggleClass('active');
+	  $(".mobile-menu").fadeToggle();
+
+	});
+	// end hamburger menu
+
+	// This is the pop-up gallery
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -18,10 +29,12 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
 });
 
 
-// this is the accordian code 
+// this is the accordian code
 
 $(document).ready(function() {
 
