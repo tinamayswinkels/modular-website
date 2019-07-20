@@ -11,7 +11,7 @@
   footer[class*=grid],
   section.banner-with-header,
   section {
-    margin: 1rem 0; /* For real projects, us margin: 0; */
+    margin-bottom: 1rem;
   }
 
   /* this is just for the demo */

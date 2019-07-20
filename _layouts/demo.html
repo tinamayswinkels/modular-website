@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  {% include head.html %}
+
+  <!-- this adds the specific stylesheet for the demo css and the no-index meta to stop google from indexing this page. Once your site is finished and you no longer need the blocks template you can delete this part below  -->
+
+  <link rel="stylesheet" href="/assets/demo.css"/>
+  <meta name="robots" content="noindex">
+
+</head>
+<body id="body">
+
+
+  {{content}}
+
+
+  {% include body-scripts.html %}
+
+</body>
+</html>

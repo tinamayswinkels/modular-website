@@ -6,6 +6,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */ 
+  }
+
   img {
     max-width: 100%; /* this ensures images never break their container */
     height: auto;
@@ -210,6 +214,24 @@
     background-color: #e67e22;
     color: white;
   }
+
+  /* Fixed Header Option */
+
+  header.fixed {
+    position: fixed;
+    background-color: #f9ca24;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 2;
+    margin:0;
+    padding: 1%;
+    text-align: center;
+  }
+  .bump-for-header {
+    min-height: 4rem;
+  }
+
 
   /* Hamburger Menu */
   .hamburger,
