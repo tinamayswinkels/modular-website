@@ -184,7 +184,8 @@
   }
 
   header a,
-  footer a {
+  footer a,
+  nav a {
     text-decoration: none;
     color: inherit;
   }

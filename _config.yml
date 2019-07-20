@@ -1,4 +1,4 @@
-permalink: /:categories/:year/:title
+permalink: /:year/:title
 
 collections:
   archives:

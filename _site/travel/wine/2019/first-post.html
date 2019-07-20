@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 
     <!-- Meta data for SEO purposes. -->
-    <title> Vertical Video Example </title>
+    <title> First Blog Post </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -17,10 +17,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <!--  Social media sharing META Tags -->
-    <meta property="og:title" content="Vertical Video Example">
+    <meta property="og:title" content="First Blog Post">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
-    <meta property="og:url" content="/video.html">
+    <meta property="og:url" content="/travel/wine/2019/first-post">
     <meta name="twitter:card" content="">
     <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
 
@@ -87,37 +87,78 @@
 </nav>
 
 
-  <h2> Responsive Video </h2>
-
+  <!-- this is your post layout, each of your individual blog post pages will use this layout. -->
 <section class="grid padded">
-  <div class="col-6_sm-12">
-    <div class='embed-container'>
 
-      <iframe src="https://www.youtube.com/embed/jG7dSXcfVqE" frameborder="0" allowfullscreen></iframe>
+  <div class="col-8_sm-12 post-body padded-1">
+      <h1> First Blog Post </h1>
 
-    </div>
+      <p class="post-meta">01 Jan 2019 | Written by Tina May</p>
+
+      <!-- this automatically outputs each category tag -->
+      <p>
+        
+          <a href="/archives/travel" class="category"> travel </a>
+        
+          <a href="/archives/wine" class="category"> wine </a>
+        
+      </p> <!-- end categories -->
+
+      <img class="full-width" src="/images/adventure.jpg">
+
+      <p>Ad quo animal legimus legendos. Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel.</p>
+
+
+      <div class="social-share">
+
+  <hr>
+
+  <h4> Did you <i class="far fa-heart featured"></i> this? Share it on ... </h4>
+  <nav>
+      <a href="https://twitter.com/intent/tweet?text=First Blog Post&url=http://localhost:4000/travel/wine/2019/first-post&via=&related=" rel="nofollow" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>Twitter
+      </a>
+      <a href="https://facebook.com/sharer.php?u=http://localhost:4000/travel/wine/2019/first-post" rel="nofollow" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>Facebook
+      </a>
+      <a href="https://plus.google.com/share?url=http://localhost:4000/travel/wine/2019/first-post" rel="nofollow" target="_blank" title="Share on Google+">
+        <i class="fab fa-google-plus"></i>Google +
+      </a>
+  </nav>
+</div>
+
+
   </div>
-  <div class="col-6_sm-12-middle padded">
-    <h2> This is a responsive video </h2>
-    <p> You can embed youtube, vimeo, wistia or other videos responsively using this code. </p>
-  </div>
-</section>
 
-<h2> Responsive Vertical Video </h2>
+  <div class="col-4_sm-12 padded-1 mob-hide sidebar">
 
-<section class="grid padded">
-  <div class="col-4_sm-12">
-    <div class='embed-container vertical'>
+      <!-- sidebar box 1 -->
+      <div>
+        <h3> This is a sidebar box </h3>
+        <p> You can edit the content of the sidebar box in your post layout. </p>
+      </div>
 
-      <iframe src="https://www.youtube.com/embed/juA4PM1PlCQ" frameborder="0" allowfullscreen></iframe>
+      <!-- sidebar box 2 -->
+      <div>
+        <p> You could put anything you want in here, like links to your social or featured articles, a newsletter signup, etc </p>
+      </div>
 
-    </div>
-  </div>
-  <div class="col-8_sm-12-middle padded">
-    <h2> This is a responsive vertical video </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  </div>
+      <!-- sidebar box 3 -->
+      <div>
+        <h3> Categories </h3>
+
+        <!-- this will output a list of all the categories on your site -->
+        
+          <a href="/archives/travel" class="category"> travel </a>
+        
+          <a href="/archives/wine" class="category"> wine </a>
+        
+          <a href="/archives/food" class="category"> food </a>
+        
+
+      </div>
+
+  </div><!-- close sidebar -->
 </section>
 
 
