@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<!-- this section is an example of how we output the travel posts -->
+<section class="padded">
+  <h1 class="centered"> Latest {{page.category}} Posts </h1>
+
+  <div class="grid blog-loop">
+
+    {% for post in site.categories[page.category] %}
+        {% include post-loop-item.html %}
+    {% endfor %}
+
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<!-- Meta Data -->
+<meta charset="utf-8">
+
+    <!-- Meta data for SEO purposes. -->
+    <title> {{page.title}} </title>
+    <meta name="description" content="{{page.meta-description}}">
+    <meta name="keywords" content="{{page.meta-keywords}}">
+
+    <!-- meta data to tell the browser that your devide is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!--  Social media sharing META Tags -->
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.meta-description}}">
+    <meta property="og:image" content="{{page.featured-image_path}}">
+    <meta property="og:url" content="{{page.url}}">
+    <meta name="twitter:card" content="{{page.meta-description}}">
+    <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
+
+<!-- end of meta tags -->
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700,900&display=swap" rel="stylesheet"></link>
+
+<!-- Gridlex -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
+
+<!-- Font Awesome Version 5 for Icons  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+
+<!-- Magnific Popup for lightbox galleries   -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+<!-- our own custom stylesheet -->
+<link rel="stylesheet" href="/style.css"/>
+
+<!-- Google Analytics -->
+
+    <!-- paste your google analytics code here -->
+
+<!-- end google analytics -->
+
+
+<!-- this adds the specific stylesheet for the demo css and the no-index meta to stop google from indexing this page. Once your site is finished and you no longer need the blocks template you can delete this part below  -->
+{% if page.body-class == 'demo'%}
+    <link rel="stylesheet" href="/demo.css"/>
+    <meta name="robots" content="noindex">
+{% endif %}

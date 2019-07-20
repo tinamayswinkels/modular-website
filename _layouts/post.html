@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- this is your post layout, each of your individual blog post pages will use this layout. -->
 <section class="grid padded">
 
   <div class="col-8_sm-12 post-body padded-1">
@@ -12,7 +13,7 @@ layout: default
       <!-- this automatically outputs each category tag -->
       <p>
         {% for category in page.categories %}
-          <a href="/category/{{category | slugify }}" class="category"> {{category}} </a>
+          <a href="/archives/{{category | slugify }}" class="category"> {{category}} </a>
         {% endfor %}
       </p> <!-- end categories -->
 
@@ -43,7 +44,7 @@ layout: default
 
         <!-- this will output a list of all the categories on your site -->
         {% for category in site.categories %}
-          <a href="/category/{{category[0] | slugify }}" class="category"> {{category[0]}} </a>
+          <a href="/archives/{{category[0] | slugify }}" class="category"> {{category[0]}} </a>
         {% endfor %}
 
       </div>

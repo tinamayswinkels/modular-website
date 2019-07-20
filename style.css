@@ -21,7 +21,6 @@
   [class*=col]  {   padding: 0; }
 
 
-
   /* ------------- Utility Classes --------------  */
 
   .left     {  text-align: left;     }
@@ -35,9 +34,9 @@
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
 
-  .dark-bg      {  background-color: rgb(90, 90, 95);  }
-  .light-bg     {  background-color: rgb(240, 240, 245); }
-  .featured-bg  {  background-color: #ffeaa7;  }
+  .dark-bg      {  background-color: rgb(90, 90, 95);     }
+  .light-bg     {  background-color: rgb(240, 240, 245);  }
+  .featured-bg  {  background-color: #ffeaa7;             }
 
   .light-text   { color: white; }
 
@@ -51,7 +50,7 @@
   h2  { font-size: 2.2rem;  }
   h3  { font-size: 1.8rem;  }
   h4  { font-size: 1.4rem;  }
-  p   { font-size: 1.1rem;  }
+  p   { font-size: 1rem;  }
 
   p, ul {
      margin-bottom: 0.8rem;
@@ -74,8 +73,6 @@
     margin-bottom: 1rem;
   }
 
-
-
   /* ------- unique typography styles - adjust to suit your styles  --------- */
 
   .not-bold   { font-weight: normal; } /* add this class to make headings not bold */
@@ -86,7 +83,7 @@
     font-weight: 700;
   }
 
-  .emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
+  p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
     font-size: 1.2rem;
   }
 
@@ -180,13 +177,14 @@
     }
 
 
-  /* headers and footers */
+  /* Headers and footers */
 
   header {
     padding: 2% 5%;
+    border-bottom: 1px solid rgb(240,240,245);
   }
 
-  nav a {
+  header a {
     text-decoration: none;
     color: inherit;
   }
@@ -213,6 +211,18 @@
     color: white;
   }
 
+  /* Hamburger Menu */
+  .hamburger,
+  .mobile-menu {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+  }
+
   footer .info {
     padding-right: 3rem;
   }
@@ -223,13 +233,6 @@
 
   footer h3 {
     font-size: 1.2rem;
-  }
-
-  @media(max-width:767px) {
-    footer .info {
-      padding-right: 1rem;
-    }
-
   }
 
   /* BANNERS */
@@ -305,7 +308,7 @@
   }
 
   /* Blog Post Elements */
-  /* Blog elements */
+  /* ---- Blog loop elements style 1 ------ */
   .blog-loop .blog-item {
     color: inherit;
     text-decoration: none;
@@ -323,6 +326,30 @@
   .post-body img {
       margin-bottom: 2vh;
   }
+
+  /* ---- Blog loop elements style 2 ------ */
+  .blog-item-wide .bg-image {
+    padding-bottom: 30%;
+  }
+
+  .text-bump { /* selects every second one and reverses it */
+    margin-left: -2rem;
+    background-color: rgb(240,240,245);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .blog-item-wide:nth-child(odd) { /* selects every second one and reverses it */
+    flex-direction: row-reverse;
+  }
+
+  .blog-item-wide:nth-child(odd) .text-bump { /* selects every second one and reverses it */
+    margin-right: -2rem;
+    margin-left: 0;
+  }
+
+
+  /* ---- Blog post pages ------ */
   .post-body {
     padding-right: 3%;
   }
@@ -335,13 +362,6 @@
     border: 1px solid rgb(245,245,245);
     padding: 2rem;
     margin: 2vh 0;
-  }
-
-  .previous, .next { /* This is to navigate to the previous and next page of pagination for blogs */
-      padding: 0 1.5em;
-      text-decoration: none;
-      color: inherit;
-      font-weight: bold;
   }
 
   .category {
@@ -418,7 +438,7 @@
      width:100%;
    }
 
-   @media(max-width:767px) {
+   @media(max-width:768px) {
      .email-signup input {
        width: 100%;
        max-width: 100%;
@@ -510,7 +530,7 @@
   }
 }
 
-/* pricing */
+/* pricing cards  */
 
 .card.featured {
   border: 2px solid orange;
@@ -568,7 +588,7 @@
   padding: 0.5rem;
 }
 
-/* Icon */
+/* Accordian Icon */
 .accordion dt a::after {
   position: absolute;
   top: 0;
@@ -592,3 +612,30 @@ input[type=radio]:checked + label::after,
 input[type=checkbox]:checked + label::after, {
   transform: rotate(135deg);
 }
+
+
+/* This media query kicks into action at the gridlex sm breakpoint */
+@media(max-width:768px) {
+
+  .mob-hide {
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+
+  .blog-item-wide .bg-image{
+    padding-bottom: 60%;
+  }
+
+  #body .text-bump {
+    margin: -0.5rem;
+  }
+
+} /* end media query */
+
+
+/* This media query kicks into action at the gridlex xs breakpoint */
+@media(max-width:576px) {
+
+} /* end media query */

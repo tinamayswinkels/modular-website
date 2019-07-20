@@ -9,24 +9,48 @@ title: blog
   <div class="grid blog-loop">
 
     {% for post in site.posts limit: 6 %}
-
-      <div class="col-4_sm-12 padded-1">
-          <a href="{{post.url}}" class="blog-item">
-            <div class="bg-image" style="background-image:url('{{post.image_path}}')"> </div>
-            <h3> {{post.title}} </h3>
-            <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
-            {% for category in post.categories %}
-              <span class="category"> {{category}} </span>
-            {% endfor %}
-            <p> {{post.excerpt | strip_html | truncate:100 }} </p>
-          </a>
-        </div>
-
-      {% endfor %}
+        {% include post-loop-item.html %}
+    {% endfor %}
 
   </div>
   <div class="centered">
     <!-- This links to the archive of blog posts -->
     <a href="/archive" class="button"> See More </a>
+  </div>
+</section>
+
+<section class="padded">
+  <h1 class="centered"> Alternative Display  </h1>
+
+  <div class="blog-loop">
+
+    {% for post in site.posts limit: 6 %}
+        {% include post-loop-item-2.html %}
+    {% endfor %}
+
+  </div>
+  <div class="centered">
+    <!-- This links to the archive of blog posts -->
+    <a href="/archive" class="button"> See More </a>
+  </div>
+</section>
+
+
+
+<!-- this section is an example of how we output the travel posts -->
+<section class="padded light-bg">
+  <h1 class="centered"> Latest travel posts  </h1>
+  <p class="centered"> This is how you add a list of blog posts from a particular category to one or your pages </p> 
+
+  <div class="grid blog-loop">
+
+    {% for post in site.categories.travel limit: 6 %}
+        {% include post-loop-item.html %}
+    {% endfor %}
+
+  </div>
+  <div class="centered">
+    <!-- This links to the archive of blog posts -->
+    <a href="/archives/travel" class="button"> See More </a>
   </div>
 </section>

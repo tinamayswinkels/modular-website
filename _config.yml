@@ -1,1 +1,5 @@
-permalinks: pretty
+permalink: /:categories/:year/:title
+
+collections:
+  archives:
+    output: true

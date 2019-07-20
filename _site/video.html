@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Meta Data -->
+<meta charset="utf-8">
 
-  <title> Vertical Video Example</title>
-  <meta name="description" content=""/>
-  <meta property="og:image" content="" />
+    <!-- Meta data for SEO purposes. -->
+    <title> Vertical Video Example </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- meta data to tell the browser that your devide is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!--  Social media sharing META Tags -->
+    <meta property="og:title" content="Vertical Video Example">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="/video.html">
+    <meta name="twitter:card" content="">
+    <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
+
+<!-- end of meta tags -->
 
 
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700,900&display=swap" rel="stylesheet"></link>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700,900&display=swap" rel="stylesheet"></link>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
+<!-- Gridlex -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+<!-- Font Awesome Version 5 for Icons  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<!-- Magnific Popup for lightbox galleries   -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
-  <!-- our own custom stylesheet -->
+<!-- our own custom stylesheet -->
+<link rel="stylesheet" href="/style.css"/>
 
-  <link rel="stylesheet" href="/style.css"/>
+<!-- Google Analytics -->
+
+    <!-- paste your google analytics code here -->
+
+<!-- end google analytics -->
 
 
-  <!-- this adds the specific stylesheet for the demo css and the no-index meta to stop google from indexing this page -->
+<!-- this adds the specific stylesheet for the demo css and the no-index meta to stop google from indexing this page. Once your site is finished and you no longer need the blocks template you can delete this part below  -->
 
-  
 
 </head>
 <body id="body">
+
+  <!-- This is your site header, you can replace this with whichever header you want to use -->
+
+<header class="grid">
+  <div class="col-4_sm-12-middle">
+    <a href="/">
+      <h2 class="logo"> LOGO </h2>
+    </a>
+  </div>
+  <nav class="col-8-middle mob-hide right">
+    <a href="/blocks"> Blocks </a>
+    <a href="/blog"> Blog </a>
+    <a href="/archive"> Archive </a>
+    <a href="#" class="emphasis"> Call to Action </a>
+  </nav>
+
+</header>
+
+
+<!-- this is the button to open and close your hamburger menu -->
+<div class="hamburger">
+  <i class="fas fa-bars"></i>
+</div>
+
+<!-- This is the mobile menu  -->
+<nav class="mobile-menu">
+  <a href="/blocks"> Blocks </a>
+  <a href="/blog"> Blog </a>
+  <a href="/archive"> Archive </a>
+  <a href="#" class="emphasis"> Call to Action </a>
+</nav>
+
 
   <h2> Responsive Video </h2>
 
@@ -61,13 +121,18 @@
 </section>
 
 
-  <!-- add javascript here at the bottom -->
+  
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <!-- these are all of your javascript links that will be added to the bottom of each page. Add new javascript resources here, or edit the main.js file to add your custom javascript or jquery -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<!-- adds jQuery library to your site -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 
-  <script src="/main.js"></script>
+<!-- adds Magnific Popups javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<!-- this is your custom javascript/jQuery file -->
+<script src="/main.js"></script>
 
 
 </body>

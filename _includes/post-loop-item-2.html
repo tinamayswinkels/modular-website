@@ -1,0 +1,17 @@
+
+<!-- this is the blog post loop item. By putting it in an include, it means that we can just write the code once and ensure it looks good everywhere we use it on the site. -->
+
+<div class="blog-item-wide grid-center padded-2">
+    <div class="col-7_sm-12 bg-image" style="background-image:url('{{post.image_path}}')"> </div>
+    <div class="col-5_sm-12 text-bump padded">
+      <h3> {{post.title}} </h3>
+      <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
+      <p>
+      {% for category in post.categories %}
+        <span class="category"> {{category}} </span>
+      {% endfor %}
+      </p>
+      <p> {{post.excerpt | strip_html | truncate:200 }} </p>
+      <a href="{{post.url}}" class="button"> Read More </a>
+    </div>
+  </div>

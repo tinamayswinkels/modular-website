@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Second Blog Post
+title: Fourth Blog Post
 meta-description:
 meta-keywords:
 image_path: /images/adventure.jpg
 categories:
-  - food
+  - travel
   - wine
 author: Tina May
 ---
