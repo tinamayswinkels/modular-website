@@ -10,7 +10,7 @@ The _site folder is the output of your website, don't touch this folder as anyth
 
 The _posts folder contains all of the blog posts which are named with the convention year-month-date-title.md
 
-The _layouts folder contains three layouts, the default layout for every page which pulls in the head, site header and site footer. The archive layout is for the category archive pages, which group archived blog posts, and the post layout is the layout for each individual blog post page. 
+The _layouts folder contains four layouts, the default layout for every page which pulls in the head, site header and site footer. The archive layout is for the category archive pages, which group archived blog posts, and the post layout is the layout for each individual blog post page. The demo layout is only used for blocks.html demo page.
 
 The _includes folder contains the head.html, the site-header and site-footer to keep these organised. It also contains the social-sharing code that's at the bottom of each blog post, and the post-loop-items that are used in all of the blog post loops.
 
