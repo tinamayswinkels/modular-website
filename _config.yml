@@ -3,3 +3,25 @@ permalink: /:year/:title
 collections:
   archives:
     output: true
+
+
+page_blocks: []
+_array_structures:
+  page_blocks:
+    - label: Banner 1
+      icon: ballot
+      value:
+        _id: banner-1
+        background-image:
+        heading:
+        sub-heading:
+    - label: Banner 2
+      icon: format_quote
+      value:
+        _id: banner-2
+        background-image:
+        line-1:
+        line-2:
+        line-3:
+        link-text:
+        link_url: 
