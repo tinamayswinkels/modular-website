@@ -10,8 +10,8 @@ page_blocks:
 {% for block in page.page_blocks %}
   {% case block._id %}
     {% when 'banner-1' %}
-      {% include banner-1.html block=block %}
+      {% include blocks.banner-1.html block=block %}
     {% when 'banner-2' %}
-      {% include banner-2.html block=block %}
+      {% include blocks.banner-2.html block=block %}
   {% endcase %}
 {% endfor %}
