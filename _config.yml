@@ -8,20 +8,31 @@ collections:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: Banner 1
+    - label: Banner A
       icon: ballot
       value:
-        _id: banner-1
+        _id: banner-a
         background_image:
         heading:
         sub-heading:
-    - label: Banner 2
+    - label: Banner B
       icon: format_quote
       value:
-        _id: banner-2
+        _id: banner-b
         background_image:
         line-1:
         line-2:
         line-3:
         link-text:
-        link_url: 
+        link_url:
+    - label: Split Banner
+      icon: ballot
+      value:
+        _id: banner-split
+        background_image:
+        content_html:
+    - label: Text Block
+      icon: ballot
+      value:
+        _id: text-block
+        content_html:
