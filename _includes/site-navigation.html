@@ -1,0 +1,21 @@
+<ul class="nav navbar-nav">
+    {% assign links = site.data.navigation %}
+    {% for link in links %}
+        {% if link.sublinks %}
+            <li class="dropdown">
+                <a href="{{ link.url }}" class="dropdown-toggle">{{ link.title }} <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    {% for sublink in link.sublinks %}
+                            <li>
+                                <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                            </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% else %}
+            <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

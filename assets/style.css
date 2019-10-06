@@ -7,7 +7,7 @@
   }
 
   html {
-    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */ 
+    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   }
 
   img {
@@ -34,6 +34,8 @@
   .padded   {  padding: 5%;    }
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
+
+  .capped-width { width: 80%; margin: auto;}
 
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
@@ -213,6 +215,32 @@
   header nav a.emphasis:hover {
     background-color: #e67e22;
     color: white;
+  }
+
+  /* Dropdown Header */
+
+  header li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  header li .dropdown-menu {
+    display: none;
+    padding: 1rem;
+    min-width: 12rem;
+  }
+
+  header li li {
+    display: block;
+  }
+
+  header .dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    background-color: white;
   }
 
   /* Fixed Header Option */
@@ -677,6 +705,10 @@ input[type=checkbox]:checked + label::after, {
 
   #body .text-bump {
     margin: -0.5rem;
+  }
+
+  .capped-width {
+    width: 100%;
   }
 
 } /* end media query */
