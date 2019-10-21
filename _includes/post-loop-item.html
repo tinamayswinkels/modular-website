@@ -8,9 +8,9 @@
       <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
       <p>
       {% for category in post.categories %}
-        <span class="category"> {{category}} </span>
+        <a href="/archives/{{category}} class="category"> {{category}} </a>
       {% endfor %}
-      </p> 
+      </p>
       <p> {{post.excerpt | strip_html | truncate:100 }} </p>
     </a>
   </div>
