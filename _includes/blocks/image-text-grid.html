@@ -1,4 +1,8 @@
 <section class="light-bg">
+  {% if block.first-pic-right == true %}
+  <div class="">
+  </div>
+  {% endif %}
   {% for layer in block.layer %}
   <div class="grid flex-flip">
     <div class="col-6_sm-12 bg-image" style="background-image:url('{{layer.picture_image}}')">

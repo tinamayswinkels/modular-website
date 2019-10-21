@@ -40,6 +40,7 @@ _array_structures:
       icon: ballot
       value:
         _id: image-text-grid
+        first-pic-right: false
         layer:
           - picture_image:
             heading:
