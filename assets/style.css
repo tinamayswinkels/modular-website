@@ -45,6 +45,7 @@
   .featured-bg  {  background-color: #ffeaa7;             }
 
   .light-text   { color: white; }
+  .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
   /* General typography */
 
@@ -679,15 +680,12 @@
 }
 
 /* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
-.accordion dt a::after,
-input[type=checkbox] + label::after {
+.accordion dt a::after {
   content: "+";
 }
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after, {
-  transform: rotate(135deg);
+.open::after {
+  transform: rotateZ(45deg);
 }
-
 
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
@@ -709,6 +707,9 @@ input[type=checkbox]:checked + label::after, {
 
   .capped-width {
     width: 100%;
+  }
+  .flex-flip{
+    flex-direction: row;
   }
 
 } /* end media query */
