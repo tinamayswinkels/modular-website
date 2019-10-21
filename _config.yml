@@ -41,6 +41,6 @@ _array_structures:
       value:
         _id: image-text-grid
         layer:
-          - pic:
+          - picture_image:
             heading:
             text:
