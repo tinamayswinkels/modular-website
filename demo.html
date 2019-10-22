@@ -1,10 +1,6 @@
 ---
 layout: default
 page_blocks:
-  - _id: banner-1
-    background_image: /images/adventure.jpg
-    heading: Test 123
-    sub-heading: Hello
   - _id: banner-2
     background_image: /images/laptop.jpg
     line-1: this
@@ -12,32 +8,15 @@ page_blocks:
     line-3: really cool
     link-text: Click Me
     link_url: /about
+  - _id: banner-1
+    background_image: /images/adventure.jpg
+    heading: Test 123
+    sub-heading: Hello
   - _id: banner-split
     background_image: /images/cocktail.jpg
     content_html: <h2>Oh hey there</h2><p>We create epic websites for cool humans.&nbsp;</p>
-  - _id: image-text-grid
-    first-pic-right: true
-    layer:
-      - picture_image: /images/cocktail.jpg
-        heading: This this a heading
-        text: >-
-          olor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-      - picture_image: /images/laptop.jpg
-        heading: This this a heading
-        text: >-
-          d do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat.
-      - picture_image: /images/person.png
-        heading: this isnt a heading
-        text: >-
-          this a headingthis a headingthis a headingthis a headingthis a
-          headingthis a headingthis a headingthis a headingthis a headingthis a
-          headingthis a headingthis a headingthis a headingthis a headingthis a
-          headingthis a headingthis a heading
+  - _id: text-block
+    content_html: <p>ljfd rd hdf gfd gfd gfds gds</p>
 ---
 
 {% for block in page.page_blocks %}
