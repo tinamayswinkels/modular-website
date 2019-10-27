@@ -7,6 +7,7 @@ image_path: /images/adventure.jpg
 categories:
   - travel
   - wine
+  - Dan's test category
 author: Tina May
 ---
 
