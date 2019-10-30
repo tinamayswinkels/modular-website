@@ -1,11 +1,7 @@
 p.clear-images-paragraph {
   clear: both;
 }
-p.disclaimer {
-  font-size: 0.8rem;
-  font-style:italic;
-  color: rgb(90,90,95);
-}
+
 
 h2.clear-images-h2 {
   clear: both;
