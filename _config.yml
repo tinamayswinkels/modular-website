@@ -6,7 +6,7 @@ collections:
     
 _options:
   content:
-    styles: /css/editor.css
+    styles: /assets/editor.css
 
 
 page_blocks: []
