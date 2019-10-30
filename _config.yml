@@ -3,6 +3,10 @@ permalink: /:year/:title
 collections:
   archives:
     output: true
+    
+_options:
+  content:
+    styles: /css/editor.css
 
 
 page_blocks: []
