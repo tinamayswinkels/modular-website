@@ -1,0 +1,64 @@
+
+/* Typography Styles */ 
+
+h2.cursive {
+    font-family: cursive; 
+    color: pink;
+}
+
+
+/* Image Styles */
+
+img {
+  height: auto;
+}
+
+img.one-third {
+  display: inline-block;
+  width: calc(33% - 1rem);
+  margin: 0.5rem;
+}
+
+img.two-thirds {
+  display: inline-block;
+  width: calc(66% - 1rem);
+  margin: 0.5rem;
+}
+
+img.one-half {
+  display: inline-block;
+  width: calc(50% - 1rem);
+  margin: 0.5rem;
+}
+
+img.float-left {
+  max-width:50%;
+  float: left;
+  margin: 0 2rem 0.5rem 0;
+}
+
+img.float-right {
+  max-width:50%;
+  float: right;
+  margin: 0 0 0.5rem 2rem;
+}
+
+img.small-centered {
+  max-width: 300px;
+  margin:auto;
+}
+
+
+/* Clear Floats */ 
+p.clear-images-paragraph {
+  clear: both;
+}
+
+
+h2.clear-images-h2 {
+  clear: both;
+}
+h3.clear-images-h3 {
+  clear: both;
+}
+
