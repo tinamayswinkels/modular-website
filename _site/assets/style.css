@@ -672,7 +672,7 @@
   display: block;
   width: 1rem;
   height: 1rem;
-  line-height: 2;
+  line-height: 1;
   text-align: center;
   -webkit-transition: all .35s;
   -o-transition: all .35s;

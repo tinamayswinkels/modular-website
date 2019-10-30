@@ -1,9 +1,3 @@
----
-layout: demo
-title: IOC Modular Blocks
----
-
-<!-- - - - - - - - - - - - - - -  -->
 <header class="grid fixed">
   <nav class="col-12">
     <a href="#headers"> Headers </a>
@@ -23,6 +17,8 @@ title: IOC Modular Blocks
 
 <div class="bump-for-header"> </div>
 
+
+
 <!-- - - - - - - - - - - - - - -  -->
 <h2 id="headers"> Header #1 </h2>
 
@@ -39,10 +35,6 @@ title: IOC Modular Blocks
     <a href="#"> Link </a>
   </nav>
 </header>
-
-<div class="">
-  ```
-</div>
 
 <!-- - - - - - - - - - - - - - -  -->
 <h2> Header #2 </h2>
@@ -276,7 +268,7 @@ title: IOC Modular Blocks
 <h2> Image & Text Grid #2 </h2>
 
 <section class="padded">
-  <div class="grid padded flex-flip">
+  <div class="grid padded mob-flip">
     <div class="col-5_sm-12 bg-image">
     </div>
     <div class="col-7_sm-12-middle padded">
@@ -286,7 +278,7 @@ title: IOC Modular Blocks
       <a class="button" href="#"> Read More </a>
     </div>
   </div>
-  <div class="grid padded flex-flip">
+  <div class="grid padded mob-flip">
     <div class="col-7_sm-12-middle padded">
       <h4 class="subtle-heading"> Adventure with me </h4>
       <h3> This this a heading </h3>
@@ -560,7 +552,7 @@ title: IOC Modular Blocks
     <input type="submit" value="Send" class="button-solid">
   </form>
 
-</section>
+</section
 
 <!-------- Logo Gallery  --------->
 

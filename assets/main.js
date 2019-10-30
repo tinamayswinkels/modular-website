@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-
+	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
 	$(".hamburger").click(function(){
 
@@ -33,6 +33,7 @@ $(document).ready(function() {
 	var allPanels = $('.accordion > dd').hide();
 
 		$('.accordion > dt > a').click(function() {
+
 			allPanels.slideUp();
 
 	    $(this).filter('.open').removeClass('open').addClass('closing')
