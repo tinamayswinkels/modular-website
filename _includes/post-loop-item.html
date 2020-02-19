@@ -8,7 +8,7 @@
       <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
       <p>
       {% for category in post.categories %}
-        <a href="/archives/{{category | slugify}}" class="category"> {{category}} </a>
+        <a href="/{{category | slugify: 'pretty' }}" class="category"> {{category}} </a>
       {% endfor %}
       </p>
       <p> {{post.excerpt | strip_html | truncate:100 }} </p>

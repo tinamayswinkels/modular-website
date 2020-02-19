@@ -383,6 +383,21 @@
     margin-bottom: 0;
   }
 
+ /* Search page */
+
+ .search-grid{
+   display: flex;
+   /* justify-content: space-around; */
+ }
+
+ .search-grid li{
+   flex-basis: 21%;
+   max-width: 21%;
+   margin: 2%;
+   list-style: none;
+ }
+
+
   /* Blog Post Elements */
   /* ---- Blog loop elements style 1 ------ */
   .blog-loop .blog-item {

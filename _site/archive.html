@@ -59,7 +59,7 @@
       <h2 class="logo"> LOGO </h2>
     </a>
   </div>
-  <nav class="col-8-middle mob-hide right">
+  <nav class="col-8-middle mob-hide right" id="search-query-container">
     <ul class="nav navbar-nav">
     
     
@@ -100,6 +100,10 @@
     
 </ul>
 
+    <form action="/search/" method="get" _lpchecked="1">
+      <input type="text" name="q" id="search-input" placeholder="Search">
+      <input type="submit" value="Search" style="display: none;">
+    </form>
   </nav>
 
 </header>
@@ -177,6 +181,11 @@
 
 <!-- adds Magnific Popups javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<!-- adds search javascript -->
+<script src="/assets/lunr.js"></script>
+<script src="/assets/search.js"></script> 
+
 
 <!-- this is your custom javascript/jQuery file -->
 <script src="/assets/main.js"></script>
