@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+
+    {% assign title = page.title | replace: "-", " "  %}
+<!-- this section is an example of how we output the travel posts -->
+<section class="padded">
+  <h1 class="centered"> Latest post in {{title}} </h1>
+
+  <div class="grid blog-loop">
+
+    {% for post in paginator.posts %}
+        {% include post-loop-item.html %}
+    {% endfor %}
+
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+<ul>
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+</section>
+
+
+<section class="padded">
+  <h2>collections that {{title}} can be found in</h2>
+  <div class="">
+
+    {% assign used-cat = '' %}
+      {% for post in site.posts  %}
+      {% assign post-tags = post.tags | capitalize %}
+        {% if post-tags contains title %}
+          {% for category in post.categories %}
+
+            {% if used-cat contains category %}
+
+            {% else %}
+              <a class="button" href="/{{category | slugify: 'pretty'}}">{{category}}</a>
+              {% assign cat = category %}
+              {% assign used-cat = used-cat | append: category %}
+            {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
