@@ -98,13 +98,13 @@ autopages:
   # Category pages, omit entire config element to disable
   categories:
     slugify:
-      mode: raw
       cased: true
+      mode: raw
     # Optional, the list of layouts that should be processed for every category found in the site
     layouts:
-      - 'archive-paginate.html'
+      - 'archive-paginate-cat.html'
     # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
-    title: 'posts in :cat'
+    title: ':cat'
     # Optional, the permalink for the  pagination page (:cat is replaced),
     # the pagination permalink path is then appended to this permalink structure
     permalink: '/:cat'
@@ -118,10 +118,13 @@ autopages:
 
   # Tag pages, omit to disable
   tags:
+    slugify:
+      cased: true
+      mode: raw
     layouts:
-      - 'archive-paginate.html'
-    title: 'Posts tagged with :tag' # :tag is replaced by the tag name
-    permalink: '/tag/:tag'
+      - 'archive-paginate-tag.html'
+    title: ':tag' # :tag is replaced by the tag name
+    permalink: '/:tag'
 
 page_blocks: []
 _array_structures:
