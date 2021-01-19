@@ -6,6 +6,27 @@ collections:
 
 _options:
   content:
+    blockquote: true
+    horizontalrule: true
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    numberedlist: true
+    code: true
+    table: true
+    right: align-to-right
+    center: align-to-center
+    left: align-to-left
+    embed: true
+    link: true
+    undo: true
+    redo: true
+    underline: true
+    strike: true
+    subscript: true
+    superscript: true
+    image: true
+    bulletedlist: true
     styles: /assets/editor.css
 
 plugins:
